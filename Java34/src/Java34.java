@@ -11,6 +11,7 @@ public class Java34 {
 
 
         System.out.println("md equal md3: " + md.equals(md3));
+        System.out.println("md == md3: "+(md==md3));
         System.out.println("md equal md2: " + md.equals(md2));
 
         System.out.println("md Hashcode: "+md.hashCode());
