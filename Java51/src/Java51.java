@@ -5,7 +5,7 @@ public class Java51 {
         String s2 = "Hello";
         String s3 = "Hello 123";
         char c1 = 'r';
-        //Function indexOf
+        //Function indexOf : search
         System.out.println("Position of s2 in s1: "+ s1.indexOf(s2));
         System.out.println("Position of s3 in s1: "+ s1.indexOf(s3));
 
