@@ -20,8 +20,10 @@ public class Java67 {
 
         //Create File
         File file1 = new File("C://Java//LearnJava//Java67/Directory_1/Exp_1.txt");
+        File file2 = new File("C://Java//LearnJava//Java67/Directory_1/Exp_2.exe");
         try {
             file1.createNewFile();
+            file2.createNewFile();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
