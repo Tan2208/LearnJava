@@ -1,0 +1,2 @@
+Hello world
+Student71{id='M01', name='Nam'}
