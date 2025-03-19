@@ -1,5 +1,4 @@
-package main73;
-
+package main74;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -93,6 +92,34 @@ public class ListStudent {
             oos.close();
 
         } catch (Exception e) {
+
+        }
+
+    }
+    public void readfile(File file)
+    {
+        try {
+            InputStream is = new FileInputStream(file);
+            ObjectInputStream ois = new ObjectInputStream(is);
+            Student st= null;
+            while (true)
+            {
+                Object oj =ois.readObject();
+                if(oj==null)
+                {
+                    break;
+                }
+                if(oj!=null)
+                {
+                    st  = (Student) oj;
+                    this.list.add(st);
+                }
+            }
+            ois.close();
+
+
+        } catch (Exception e) {
+
         }
 
     }
